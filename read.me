@@ -1,0 +1,83 @@
+# 退休日期计算器
+
+这是一个基于 Spring Boot 的 Web 应用程序，用于根据用户的出生日期、性别和原法定退休年龄计算退休日期。
+
+## 功能
+
+- 用户输入出生日期、性别和原法定退休年龄。
+- 根据政策计算并显示退休日期。
+- 简单友好的用户界面。
+
+## 技术栈
+
+- **后端**：Java, Spring Boot
+- **前端**：HTML, CSS, Thymeleaf
+- **构建工具**：Maven
+
+## 如何运行
+
+### 前提条件
+
+- 安装 JDK 17 或更高版本。
+- 安装 Maven。
+
+### 步骤
+
+1. **克隆仓库**
+
+   ```bash
+   git clone https://github.com/your-username/retirement-calculator.git
+   cd retirement-calculator
+   ```
+
+2. **构建项目**
+
+   ```bash
+   mvn clean install
+   ```
+
+3. **运行应用**
+
+   ```bash
+   mvn spring-boot:run
+   ```
+
+4. **访问应用**
+
+   打开浏览器，访问 [http://localhost:8080](http://localhost:8080)
+
+## 部署
+
+您可以将此应用部署到 Heroku、AWS、GCP 等云平台。以下是部署到 Heroku 的简要步骤：
+
+1. **登录 Heroku**
+
+   ```bash
+   heroku login
+   ```
+
+2. **创建 Heroku 应用**
+
+   ```bash
+   heroku create your-app-name
+   ```
+
+3. **推送代码到 Heroku**
+
+   ```bash
+   git push heroku main
+   ```
+
+4. **打开应用**
+
+   ```bash
+   heroku open
+   ```
+
+## 贡献
+
+欢迎提交问题和拉取请求！
+
+## 许可证
+
+MIT

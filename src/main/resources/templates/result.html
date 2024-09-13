@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>退休日期结果</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <h1>您的退休日期为：</h1>
+        <p class="result" th:text="${retirementDate}"></p>
+        <a href="/" class="button">重新计算</a>
+    </div>
+</body>
+</html>

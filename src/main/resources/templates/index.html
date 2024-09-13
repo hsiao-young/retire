@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>退休日期计算器</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <h1>退休日期计算器</h1>
+        <div th:if="${error}" class="error">
+            <p th:text="${error}"></p>
+        </div>
+        <form action="/calculate" method="post">
+            <label for="birthDate">出生日期（YYYY-MM-DD）：</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <label for="gender">性别：</label>
+            <select id="gender" name="gender" required>
+                <option value="">请选择</option>
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+
+            <label for="originalRetirementAge">原法定退休年龄：</label>
+            <select id="originalRetirementAge" name="originalRetirementAge" required>
+                <option value="">请选择</option>
+                <option value="50">50岁（女工人）</option>
+                <option value="55">55岁（女干部）</option>
+                <option value="60">60岁（男）</option>
+            </select>
+
+            <button type="submit">计算退休日期</button>
+        </form>
+    </div>
+</body>
+</html>
